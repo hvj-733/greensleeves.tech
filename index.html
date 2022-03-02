@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <script src="https://cdn.tailwindcss.com"></script>  <script>    tailwind.config = {      theme: {        extend: {          colors: {            clifford: '#da373d',          }        }      }    }  </script>
+    <link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet'>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <style>
+      html {
+    font-family: 'Signika', sans-serif;
+    scroll-behavior: smooth;
+}
+a.arrow{
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  text-decoration: none;
+  padding-bottom:30px;
+  -webkit-transition: color 0.2s ease-out;  /* Safari 3.2+, Chrome */
+  -moz-transition: color 0.2s ease-out; 
+  -o-transition: color 0.2s ease-out;  /* Opera 10.5–12.00 */
+   transition: color 0.2s ease-out; 
+}
+a.arrow:hover {color: #FFC52F;}
+
+body {
+  color: #000;
+  background-color: #f4f4f4;
+  transition: background-color 1s ease;
+}
+.panel {
+  min-height: 100vh;
+  align-items: center;
+  font-family: 'Signika', sans-serif;
+}
+
+
+.color-white {
+  background-color: #ffffff;
+}
+.color-green {
+  background-color: rgb(0,201,147);
+  color: white;
+}
+
+h1, h2 {
+  font-size: 3em;
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+}
+p {
+  max-width: 30em;
+  margin-bottom: 1.618em;
+}
+    </style>
+  </head>
+  <body>
+
+         
+<div class="navpanel fixed left-0 top-0 w-full h-20 flex">
+  <div class="container flex items-center m-auto justify-between md:px-2 px-4">
+
+    <div class="flex items-center">
+      <img src='gs.png' style="border-radius:50%; width: 40px;"/>
+      </svg>
+      <span class="text-lg font-medium" style="margin-left: 6px;">Greensleeves</span>
+    </div>
+
+    <div class="md:flex hidden space-x-6 text-gray-600">
+      <a class="cursor-pointer hover:text-gray-900" href="#">Features</a>
+      <a class="cursor-pointer hover:text-gray-900" href="#">Benefits</a>
+      <a class="cursor-pointer hover:text-gray-900" href="#">Pricing</a>
+    </div>
+
+    <div class="md:flex hidden items-center space-x-4">
+      <a class="px-4 py-2 bg-gray-700 text-gray-100 hover:bg-gray-800 hover:text-gray-50 cursor-pointer rounded transition duration-300 shadow" href="mailto:xyz@greensleeves.tech">Contact Us</a>
+    </div>
+    
+    <div class="md:hidden flex items-center space-x-4">
+      <button class="menu-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="panel" id="toppanel" style="font-size: 90px;" data-color="green">
+    <div><img src="gr2.png" style="margin-top: 80px;" width="100%"/></div> <br>
+    <div style="text-align: center; margin-top: -200px;"> <a href="#panel1"><i class="fas fa-chevron-circle-down fa-xs"></i></a></div>
+  </div>
+  <div class="panel" id='panel1' style="text-align: center;" data-color="white">
+    <div style="text-align: center !important;"><br><br><br><br><br><br><br><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco <br> laboris nisi ut aliquip ex ea commodo consequat. </div>
+    <div style="text-align: center; margin-top: 30px;"> <a href="#panel2"><i class="fas fa-chevron-circle-down fa-4x"></i></a></div>
+  </div>
+  <div class="panel" id='panel2' style="text-align: center;" data-color="green">
+    <div style="text-align: center !important;"><br><br><br><br><br><br><br><br><br>Some more text here telling about us maybe, or our products, <br> or our prices, or about me and Some more text here telling about us maybe, <br> or our products, or our prices, or about me and </div>
+    <div style="text-align: center; margin-top: 30px;"> <a href="#panel3"><i class="fas fa-chevron-circle-down fa-4x"></i></a></div>
+
+  </div>
+  <div class="panel" id='panel3' style="text-align: center;" data-color="white">
+    <div style="text-align: center !important;"><br><br><br><br><br><br><br><br><br>Some more text here telling about us maybe, or our products, <br> or our prices, or about me and Some more text here telling about us maybe, <br> or our products, or our prices, or about me and </div>
+    <div style="text-align: center; margin-top: 30px;"> <a href="#panel4"><i class="fas fa-chevron-circle-down fa-4x"></i></a></div>
+
+  </div>
+  <div class="panel" id='panel4' style="text-align: center;" data-color="green">
+    <div style="text-align: center !important;"><br><br><br><br><br><br><br><br><br>Some more text here telling about us maybe, or our products, <br> or our prices, or about me and Some more text here telling about us maybe, <br> or our products, or our prices, or about me and </div>
+    <div style="text-align: center; margin-top: 30px;"> <a href="#toppanel"><i class="fas fa-chevron-circle-up fa-4x"></i></a></div>
+
+  </div>
+
+
+
+<span style="font-size:12px; color: #f4f4f4;">©anuj.coder</span>
+
+
+
+
+    <script>$(window).scroll(function() {
+  
+      var $window = $(window),
+          $body = $('body'),
+          $panel = $('.panel');
+          $npanel = $('.navpanel');
+          $tr='WVc1MWFpNWpiMlJsY2c9PQ==';
+      
+      var scroll = $window.scrollTop() + ($window.height() / 3);
+     
+      $panel.each(function () {
+        var $this = $(this);
+
+        if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+              
+          $body.removeClass(function (index, css) {
+            return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+          });
+          $npanel.removeClass(function (index, css) {
+            return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+          });
+           
+          //2745082005
+          $body.addClass('color-' + $(this).data('color'));
+          $npanel.addClass('color-' + $(this).data('color'));
+        }
+      });    
+      
+    }).scroll();</script>
+  </body>
+</html>
